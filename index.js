@@ -12,4 +12,5 @@ app.get('/', (request, response) => {
   response.send();
 });
 
-app.use('/', require('./controller/root'));
+app.use('/user', require('./controller/user/router'));
+app.use('/login', require('./controller/login/router'));
