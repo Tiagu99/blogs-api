@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
     return res.status(400).send({ message: '"title" is required' });
   }
   if (!categoryIds) {
-    return res.status(400).send({ message: '"categoryId" is required' });
+    return res.status(400).send({ message: '"categoryIds" is required' });
   }
   if (!content) {
     return res.status(400).send({ message: '"content" is required' });
