@@ -8,5 +8,6 @@ const router = express.Router({ mergeParams: true });
 router.post('/', emailValidade, createValidate, require('./create'));
 router.get('/', validateToken, require('./getAll'));
 router.get('/:id', validateToken, require('./findById'));
+router.delete('/me', validateToken, require('./delete'));
 
 module.exports = router;
