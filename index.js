@@ -1,10 +1,9 @@
 const express = require('express');
+require('dotenv').config();
 
 const app = express();
 
 app.use(express.json());
-
-app.use('/', require('./controller/root'));
 
 app.listen(3000, () => console.log('ouvindo porta 3000!'));
 
@@ -12,3 +11,5 @@ app.listen(3000, () => console.log('ouvindo porta 3000!'));
 app.get('/', (request, response) => {
   response.send();
 });
+
+app.use('/', require('./controller/root'));
