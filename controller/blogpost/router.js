@@ -9,5 +9,6 @@ router.post('/', createValidate, tokenValidade, require('./create'));
 router.get('/', tokenValidade, require('./getAll'));
 router.get('/:id', tokenValidade, require('./findById'));
 router.put('/:id', tokenValidade, updateValidate, require('./update'));
+router.delete('/:id', tokenValidade, require('./delete'));
 
 module.exports = router;
