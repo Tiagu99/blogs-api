@@ -4,7 +4,8 @@ const jwt = require('../../helper/jwt');
 module.exports = async (req, res) => {
   const { email, password } = req.body;
 
-  const user = service(email, password);
+  const user = await service(email, password);
+  console.log(user);
 
   if (!user) {
     return res.status(400).send({ message: 'Invalid fields' });

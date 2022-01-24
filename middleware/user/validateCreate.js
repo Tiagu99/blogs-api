@@ -10,7 +10,8 @@ module.exports = (req, res, next) => {
     return res.status(400).send({ message: '"displayName" is required' });
   }
   if (displayName.length < 8) {
-    return res.status(400).send({ message: '"displayName" length must be 8 characters long' });
+    return res.status(400).send({ 
+      message: '"displayName" length must be at least 8 characters long' });
   }
  
   return next();

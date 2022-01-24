@@ -1,7 +1,7 @@
 const express = require('express');
 const emailValidade = require('../../middleware/user/validateEmail');
 const createValidate = require('../../middleware/user/validateCreate');
-const validateToken = require('../../middleware/login/validateLogin');
+const validateToken = require('../../middleware/user/tokenValidade');
 
 const router = express.Router({ mergeParams: true });
 
