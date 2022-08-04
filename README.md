@@ -1,4 +1,4 @@
-<h2 align="center">Ebytr Back-End</h2>
+<h2 align="center">Blogs API</h2>
 
 ___
 
