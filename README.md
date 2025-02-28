@@ -40,7 +40,7 @@ Back-end desenvolvido para um projeto avaliativo enquanto cursava a Trybe, no in
 
 ## :seedling: Requisitos Mínimos
 
-NodeJS v16.6.2, MongoDB v4.4.11
+NodeJS v16.6.2, MySQL v
 
 Os escripts de inicialização presente package.json são fornecidos pela Trybe.
 
@@ -49,5 +49,5 @@ Os escripts de inicialização presente package.json são fornecidos pela Trybe.
 O projeto foi desenvolvido utilizando as seguintes tecnologias 
 
 - NodeJS
-- MongoDB
+- MySQL
 - Express
